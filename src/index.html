@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우편 접수 알림 서비스</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>우편 접수 알림 서비스</h1>
+    </header>
+    <main>
+        <form method="post">
+            <div class="input_wrapper">
+                <label for="id">우표 번호</label>
+                <input id="id" type="number" placeholder="13자리 우표 번호를 입력해주세요." oninput="onInput()">
+            </div>
+            <div class="input_wrapper">
+                <label for="user">이메일</label>
+                <input id="user" type="email" placeholder="알림 받을 이메일을 입력해주세요." oninput="onInput()">
+            </div>
+            <!-- TODO: 신청 기능 -->
+            <button id="submit_button"" type="button" class="submit_button" onclick="onClick()" disabled>신청</button>
+        </form>
+    </main>
+    <footer>
+        <small>your.post.has.started@gmail.com</small>
+    </footer>
+</body>
+</html>
